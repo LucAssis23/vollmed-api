@@ -1,5 +1,6 @@
 package med.voll.api.controller;
 
+import org.springframework.test.context.ActiveProfiles;
 import med.voll.api.domain.consulta.AgendaDeConsultas;
 import med.voll.api.domain.consulta.DadosAgendamentoConsulta;
 import med.voll.api.domain.consulta.DadosDetalhamentoConsulta;
@@ -27,7 +28,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 @SpringBootTest
 @AutoConfigureMockMvc
 @AutoConfigureJsonTesters
+@ActiveProfiles("test")
 class ConsultaControllerTest {
+
 
     @Autowired
     private MockMvc mvc;

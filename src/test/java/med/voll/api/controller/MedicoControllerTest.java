@@ -1,5 +1,6 @@
 package med.voll.api.controller;
 
+import org.springframework.test.context.ActiveProfiles;
 import med.voll.api.domain.endereco.DadosEndereco;
 import med.voll.api.domain.endereco.Endereco;
 import med.voll.api.domain.medico.*;
@@ -24,6 +25,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 @SpringBootTest
 @AutoConfigureMockMvc
 @AutoConfigureJsonTesters
+@ActiveProfiles("test")
 class MedicoControllerTest {
 
     @Autowired
