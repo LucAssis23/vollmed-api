@@ -28,8 +28,8 @@ jobs:
         USER: ubuntu
         HOST: 3.148.117.249
       run: |
-        echo "$PRIVATE_KEY" > deploy.key.pem
-        chmod 600 deploy.key.pem
+        echo "$PRIVATE_KEY" > deploy_key.pem
+        chmod 600 deploy_key.pem
 
         docker save -o vollmed-api.tar vollmed-api-api 
 
